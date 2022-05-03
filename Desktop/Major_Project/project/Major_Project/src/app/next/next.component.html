@@ -2,7 +2,22 @@
     <filters></filters>
     <div class="col">
         <div class="row-fluid">
-            <input type="checkbox" (click)="afirst()" name="angular1" > 
+            <table class="table table-striped table-dark">
+                <thead>
+                  <tr >
+                    <th scope="col" *ngFor="let header of dataset;index as i" >
+                        <ng-container *ngIf="i<colcount">{{header.name}}</ng-container>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor = "let data of dataset; index as q">
+                    <th scope="col" *ngFor = "let cols of dataset; index as i">
+                        <ng-container *ngIf=" q < rowcount && i < colcount"> {{dataset[i].content[q]}} </ng-container>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
         </div>
     </div>
 </div>

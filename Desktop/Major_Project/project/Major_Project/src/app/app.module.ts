@@ -11,6 +11,12 @@ import { NextComponent } from './next/next.component';
 import { FiltersComponent } from './filters/filters.component';
 import { HomeComponent } from './home/home.component';
 
+import { FilterserviceService } from './services/filterservice.service';
+import { ContentService } from './services/content.service';
+import { HistoryService } from './services/history.service';
+import { PredictionComponent } from './prediction/prediction.component';
+import { NgChartsModule } from 'ng2-charts';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,13 +26,15 @@ import { HomeComponent } from './home/home.component';
     HistoryComponent,
     NextComponent,
     FiltersComponent,
-    HomeComponent
+    HomeComponent,
+    PredictionComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgChartsModule
   ],
-  providers: [],
+  providers: [FilterserviceService, ContentService, HistoryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

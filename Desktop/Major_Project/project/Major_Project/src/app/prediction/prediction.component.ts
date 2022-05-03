@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Chart, registerables} from 'chart.js';
+import { Chart } from 'chart.js';
 import { HistoryService } from '../services/history.service';
 
 @Component({
@@ -18,7 +18,6 @@ export class PredictionComponent implements OnInit {
   cnt : number = 1;
   constructor(private hist : HistoryService) { 
     // Chart.register(...registerables);
-    
   }
 
   ngOnInit(): void {
@@ -46,6 +45,7 @@ export class PredictionComponent implements OnInit {
     //     }],
     //   },
     // });    
+
     console.log(this.col1);
     console.log(this.col2);
     

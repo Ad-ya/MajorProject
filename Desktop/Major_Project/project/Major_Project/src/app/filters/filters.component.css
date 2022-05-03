@@ -1,0 +1,10 @@
+#parent{
+    padding: 20px;
+    border: 10px double rgb(15, 56, 239);
+    margin: 2px;
+}
+
+#checkboxes{
+    float: right;
+    padding: 3px;
+}

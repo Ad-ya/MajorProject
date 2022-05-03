@@ -1,1 +1,24 @@
-<p>filters works!</p>
+<div class="row" id = "parent">
+        <h2>ENTER FILTER</h2>
+        <div class="row" >
+                <label for="customRange3" class="form-label">Row count: {{rold}}</label>
+
+                <ng-container *ngIf="this.event_url==='/filter' ">
+                        <span id="checkboxes">
+                                <input type="checkbox" (click)="alter1=!alter1" [checked]="alter1">
+                                <span>   Press to disable </span>
+                        </span>
+                </ng-container>
+                <input type="range"  [value]="this.rold" #row min="0" max="10" step="1" id="customRange3"  (change)="uRange()" [disabled]="alter1">
+        </div>
+        <div class="row">
+                <label for="customRange2" class="form-label">Column count: {{cold}}</label>
+                <ng-container *ngIf="this.event_url==='/filter'  ">
+                        <span id="checkboxes">
+                                <input type="checkbox" (click)="alter2=!alter2" [checked]="alter2">
+                                <span>   Press to disable </span>
+                        </span>
+                </ng-container>
+                <input type="range" [value]="this.cold" min="0" max="10" step="1" #col id="customRange2"  (change)="uRange()" [disabled]="alter2">
+        </div>
+</div>

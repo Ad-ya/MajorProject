@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
   titles = [
-    {name :'Electronic Sales' , type: 'glyphicon glyphicon-signal'},
-    {name :'Sales Charts' , type: '	glyphicon glyphicon-object-align-bottom'},
-    {name : 'Default-1' , type : 'glyphicon glyphicon-eye-open'},
-    {name : 'Default-2' , type : 'glyphicon glyphicon-eye-open'},
-    {name : 'Default-3' , type : 'glyphicon glyphicon-eye-open'},
-    {name : 'Default-4' , type : 'glyphicon glyphicon-eye-open'},
+    {name : 'Differentiate angulars' , type: 'glyphicon glyphicon-signal' , link: '/next'},
+    {name : 'Prediction graph' , type : 'glyphicon glyphicon-object-align-bottom' , link: '/predict'},
+    {name : 'Work in progress 2' , type : 'glyphicon glyphicon-eye-open', link: '/home'},
+    {name : 'Work in progress 3' , type : 'glyphicon glyphicon-eye-open', link: '/home'},
+    {name : 'Work in progress 4' , type : 'glyphicon glyphicon-eye-open', link: '/home'},
+    {name : 'Work in progress 5' , type : 'glyphicon glyphicon-eye-open', link: '/home'},
   ];
 
   constructor() {

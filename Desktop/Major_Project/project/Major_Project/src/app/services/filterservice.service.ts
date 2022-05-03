@@ -11,13 +11,13 @@ export class FilterserviceService {
     this.filterlist = [
       {
         id: 'rows',
-        count : 5,
-        isActive: true
+        count : 2,
+        isActive: false
       },
       {
         id: 'columns',
-        count: 3,
-        isActive: true
+        count: 1,
+        isActive: false
       }
     ]
   }

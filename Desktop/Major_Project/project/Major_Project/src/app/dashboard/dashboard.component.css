@@ -1,6 +1,7 @@
 .card-data {
     width: 100%;
     display: flex;
+    margin: auto;
     flex-direction: row;
     flex-wrap: wrap;
     background-image: url('https://source.unsplash.com/random/nature');
@@ -11,9 +12,8 @@
   
   .card {
     width: 47%;
-    height: 100px;
     line-height: 100px;
-    margin: 10px;
+    margin: auto;
     color: white;
     text-align: center;
     vertical-align: middle;

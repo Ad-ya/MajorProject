@@ -2,7 +2,12 @@ h1{
     padding-left: 5%;
 }
 
-.row{
-    background-color: cadetblue;
+#parent{
+    background-color: rgb(225, 247, 248);
     padding-left: 5px;
+}
+
+#content{
+    background-color: rgba(4, 123, 100, 0.57);
+    color: white;
 }

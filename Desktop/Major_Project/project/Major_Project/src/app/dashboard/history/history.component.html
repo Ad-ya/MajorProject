@@ -1,6 +1,11 @@
-<div class="row">   
-    <h1>HiSTORY</h1>
-    <li *ngFor="let x of hist">
-        
-    </li>
+<div class="row" id="parent">   
+    <div class="row" id="head">
+        <h1>HiSTORY</h1>
+    </div>
+    <div class="row" id="content">
+        <li *ngFor="let x of hist, index as i">
+            <ul>{{i+1}}) <b>Number of Rows filtered:</b> {{x.row}},  <b>Number of columns filtered:</b> {{x.col}},   <b>Number of records filtered:</b> {{x.rec}}</ul>
+        </li>
+    </div>
+   
 </div> 

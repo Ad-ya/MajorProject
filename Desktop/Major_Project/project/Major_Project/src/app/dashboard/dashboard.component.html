@@ -1,5 +1,5 @@
 <div class="card-data" >
     <div class="card" *ngFor = "let x of titles, index as i" >
-        <titles [titlename]="x" ></titles>
+        <titles [titlename]="x"  [routerLink]="x.link" routerLinkActive="active"></titles>
     </div>
 </div>
